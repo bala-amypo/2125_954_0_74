@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation
 import com.example.demo.entity.Studententity;
 import com.example.demo.service.Studentservice;
 
+@RestController
 public class Studentcontroller{
 
+    @
 }
