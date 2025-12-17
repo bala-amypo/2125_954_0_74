@@ -11,5 +11,16 @@ import com.example.demo.service.Studentservice;
 @RestController
 public class Studentcontroller{
 
-    @
+    @Autowired
+    private Studentservice ser;
+
+    @PostMapping("/Postadd")
+    public Studentity saveData(@RequestBody Studententity st){
+        return ser.saveData(st);
+    }
+    @GetMapping("/Getadd/{id}")
+    public Studententity getStudent(@PathVariable int id){
+        return ser.getStudent(id);
+    }
+    @GetMapping("/GetAll")
 }
