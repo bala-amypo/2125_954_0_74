@@ -16,12 +16,19 @@ public class Studententity{
     public void setName(String name){
         this.name=name;
     }
-    public String getEmail(){
+    public void getEmail(){
         return email;
+    }
+    public void setEmail(String email){
+        this email=email;
     }
     public Studentity(int id,String name,String email){
         this.id=id;
-        this.n
+        this.name=name;
+        this.email=email;
+    }
+    public Studentity(){
+
     }
 
 }
