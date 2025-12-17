@@ -22,7 +22,10 @@ public class Studentservice{
     public Studententity updateStudent(int id,Studententity st){
         if(details.containsKey(id)){
             Studententity existing = details.get(id);
-            existing
+            existing.setName(st.getName());
+            existing.setEmail(st.getEmail());
+            return existing;
         }
+        return null;
     }
 }
