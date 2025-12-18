@@ -1,12 +1,18 @@
 package com.example.demo.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "vehicle") // optional, matches your DB table name
 public class VehicleEntity {
+
     @Id
-    @Entity
-    private int id;
+    private Long id;
+
     private String name;
     private String email;
-
     public VehicleEntity() {
     }
 
