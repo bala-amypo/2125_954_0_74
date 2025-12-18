@@ -5,7 +5,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "vehicle") // optional, matches your DB table name
+@Table(name = "vehicle") // Optional, matches your DB table name
 public class VehicleEntity {
 
     @Id
@@ -13,23 +13,28 @@ public class VehicleEntity {
 
     private String name;
     private String email;
+
+    // Default constructor required by JPA
     public VehicleEntity() {
     }
 
-    public VehicleEntity(int id, String name, String email) {
+    // Constructor
+    public VehicleEntity(Long id, String name, String email) {
         this.id = id;
         this.name = name;
         this.email = email;
     }
 
-    public int getId() {
+    // Getter and setter for id
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
+    // Getter and setter for name
     public String getName() {
         return name;
     }
@@ -38,6 +43,7 @@ public class VehicleEntity {
         this.name = name;
     }
 
+    // Getter and setter for email
     public String getEmail() {
         return email;
     }
