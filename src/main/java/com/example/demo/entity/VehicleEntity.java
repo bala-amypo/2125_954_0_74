@@ -1,7 +1,8 @@
 package com.example.demo.entity;
 
 public class VehicleEntity {
-
+    @Id
+    @Entity
     private int id;
     private String name;
     private String email;
