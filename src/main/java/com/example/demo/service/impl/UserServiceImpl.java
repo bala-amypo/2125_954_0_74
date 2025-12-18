@@ -9,7 +9,7 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.UserEntity;
-import com.example.demo.service.UserService;
+import com.example.demo.service.UserServiceImpl;
 
 @Service
 public class UserServiceImpl implements UserService {
