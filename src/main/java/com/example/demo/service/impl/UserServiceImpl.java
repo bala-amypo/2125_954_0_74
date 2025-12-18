@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.UserEntity;
 
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl {
 
     Map<Integer, UserEntity> details = new HashMap<>();
 
