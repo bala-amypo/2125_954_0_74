@@ -1,4 +1,4 @@
-package com.example.demo.service;
+package com.example.demo.service.impl;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -9,16 +9,12 @@ import java.util.Optional;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.VehicleEntity;
+import com.example.demo.service.VehicleService;
 
 @Service
-public class VehicleServiceImpl {
+public class VehicleServiceImpl implements VehicleService {
 
-    Map<Integer, VehicleEntity> details = new HashMap<>();
-
-    public VehicleEntity saveData(VehicleEntity vehicle) {
-        details.put(vehicle.getId(), vehicle);
-        return vehicle;
-    }
+    private Map<Integer, VehicleEntity> details = new HashMap<>();
 
     @Override
     public VehicleEntity insertVehicle(VehicleEntity vehicle) {
